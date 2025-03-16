@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструирование алгоритмов</title>
+    <style>
+        /* Сброс отступов и установка высоты body и html на 100% */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #000000; /* Черный цвет текста */
+            overflow: auto; /* Включаем прокрутку */
+        }
+
+        /* Анимация для фона */
+        body {
+            background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0);
+            background-size: 400% 400%;
+            animation: GradientBackground 15s ease infinite;
+        }
+
+        @keyframes GradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Контейнер для контента */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Светлый фон для контраста */
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000; /* Черный цвет текста */
+        }
+
+        /* Текст */
+        .content {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #000000; /* Черный цвет текста */
+        }
+
+        /* Кнопка "Тест" */
+        .test-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #1e90ff; /* Синий цвет кнопки */
+            color: #ffffff; /* Белый цвет текста */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .test-button:hover {
+            background-color: #0077cc; /* Темно-синий цвет при наведении */
+        }
+
+        /* Пример кода */
+        pre {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            color: #000000; /* Черный цвет текста в блоке кода */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Конструирование алгоритмов</h1>
+        <div class="content">
+            <h2>Что такое алгоритм?</h2>
+            <p>
+                Алгоритм — это последовательность четких шагов, которые нужно выполнить, чтобы решить задачу. Алгоритмы используются в программировании, математике и других науках.
+            </p>
+
+            <h2>Основные этапы создания алгоритма</h2>
+            <ol>
+                <li>
+                    <strong>Постановка задачи</strong><br>
+                    Четко сформулируйте, что нужно сделать. Например, найти самое большое число в списке.
+                </li>
+                <li>
+                    <strong>Анализ задачи</strong><br>
+                    Разберите задачу на части. Определите, какие данные нужны и что должно получиться в результате.
+                </li>
+                <li>
+                    <strong>Разработка алгоритма</strong><br>
+                    Придумайте шаги для решения задачи. Запишите их на бумаге или в виде блок-схемы.
+                </li>
+                <li>
+                    <strong>Реализация алгоритма</strong><br>
+                    Напишите программу на языке программирования, например, на Python.
+                </li>
+                <li>
+                    <strong>Тестирование</strong><br>
+                    Проверьте программу на разных данных, чтобы убедиться, что она работает правильно.
+                </li>
+            </ol>
+
+            <h2>Пример алгоритма для 9 класса</h2>
+            <p>
+                Рассмотрим задачу: найти сумму всех чисел от 1 до N, где N — число, которое вводит пользователь.
+            </p>
+            <pre>
+# Программа на Python
+N = int(input("Введите число N: "))
+summa = 0
+for i in range(1, N + 1):
+    summa += i
+print("Сумма чисел от 1 до", N, "равна", summa)
+            </pre>
+            <p>
+                Этот алгоритм:
+            </p>
+            <ol>
+                <li>Запрашивает у пользователя число N.</li>
+                <li>Использует цикл для сложения чисел от 1 до N.</li>
+                <li>Выводит результат.</li>
+            </ol>
+
+            <h2>Советы для создания алгоритмов</h2>
+            <ul>
+                <li>Начинайте с простых задач.</li>
+                <li>Используйте блок-схемы для визуализации алгоритмов.</li>
+                <li>Проверяйте программу на разных данных.</li>
+                <li>Не бойтесь ошибаться — это часть обучения!</li>
+            </ul>
+        </div>
+
+        <!-- Кнопка "Тест" -->
+        <button class="test-button" onclick="alert('Тест пока недоступен. Следите за обновлениями!')">Тест</button>
+    </div>
+</body>
+</html>
